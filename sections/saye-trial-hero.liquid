@@ -1,0 +1,19 @@
+{{- 'saye-trial-hero.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trial-hero" id="saye-trial-hero-{{ section.id }}">
+  <div class="saye-trial-hero__container page-width">
+    <span class="saye-trial-hero__icon" aria-hidden="true">🎁</span>
+    <h1 class="saye-trial-hero__heading">İlk Dersin Tamamen Ücretsiz</h1>
+    <p class="saye-trial-hero__text">Hiçbir ödeme bilgisine ihtiyaç yok. Üyeliğini aç ve dersine katıl.</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Deneme Hero",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Deneme Hero" }]
+}
+{% endschema %}

@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "saye-trial-hero": {
+      "type": "saye-trial-hero",
+      "settings": {}
+    },
+    "saye-trial-form": {
+      "type": "saye-trial-form",
+      "settings": {}
+    },
+    "saye-trial-trust": {
+      "type": "saye-trial-trust",
+      "settings": {}
+    },
+    "saye-trial-expect": {
+      "type": "saye-trial-expect",
+      "settings": {}
+    },
+    "saye-trial-quote": {
+      "type": "saye-trial-quote",
+      "settings": {}
+    }
+  },
+  "order": [
+    "saye-trial-hero",
+    "saye-trial-form",
+    "saye-trial-trust",
+    "saye-trial-expect",
+    "saye-trial-quote"
+  ]
+}

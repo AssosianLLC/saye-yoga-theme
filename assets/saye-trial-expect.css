@@ -1,0 +1,64 @@
+.saye-trial-expect {
+  padding: 48px;
+  background: var(--saye-bg);
+}
+
+.saye-trial-expect__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.saye-trial-expect__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.saye-trial-expect__card {
+  text-align: center;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(60, 36, 21, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saye-trial-expect__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(60, 36, 21, 0.12);
+}
+
+.saye-trial-expect__icon {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.saye-trial-expect__title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  margin: 0 0 12px;
+}
+
+.saye-trial-expect__desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--saye-dark);
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 749px) {
+  .saye-trial-expect {
+    padding: 32px 16px;
+  }
+
+  .saye-trial-expect__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

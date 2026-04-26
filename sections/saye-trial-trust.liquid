@@ -1,0 +1,29 @@
+{{- 'saye-trial-trust.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trial-trust" id="saye-trial-trust-{{ section.id }}">
+  <div class="saye-trial-trust__container page-width">
+    <ul class="saye-trial-trust__list">
+      <li class="saye-trial-trust__item">
+        <span class="saye-trial-trust__check">✓</span> Ödeme bilgisi gerekmez
+      </li>
+      <li class="saye-trial-trust__separator" aria-hidden="true">•</li>
+      <li class="saye-trial-trust__item">
+        <span class="saye-trial-trust__check">✓</span> Üyelik sayfandan derse katılabilirsin
+      </li>
+      <li class="saye-trial-trust__separator" aria-hidden="true">•</li>
+      <li class="saye-trial-trust__item">
+        <span class="saye-trial-trust__check">✓</span> Kamera zorunlu değil
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Deneme Güven Bandı",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Deneme Güven Bandı" }]
+}
+{% endschema %}

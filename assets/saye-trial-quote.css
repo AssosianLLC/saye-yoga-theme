@@ -1,0 +1,46 @@
+.saye-trial-quote {
+  background: var(--saye-rose);
+  padding: 64px 48px;
+}
+
+.saye-trial-quote__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.saye-trial-quote__blockquote {
+  max-width: 600px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.saye-trial-quote__text {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--saye-dark);
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.saye-trial-quote__attribution {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media (max-width: 749px) {
+  .saye-trial-quote {
+    padding: 48px 24px;
+  }
+
+  .saye-trial-quote__text {
+    font-size: 20px;
+  }
+}

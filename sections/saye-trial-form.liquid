@@ -1,0 +1,73 @@
+{{- 'saye-trial-form.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trial-form" id="saye-trial-form-{{ section.id }}">
+  <div class="saye-trial-form__container page-width">
+    <div class="saye-trial-form__card">
+      <h2 class="saye-trial-form__heading">Yerini Ayır</h2>
+
+      <form class="saye-trial-form__form" action="/contact" method="POST">
+        <input type="hidden" name="form_type" value="contact">
+        <input type="hidden" name="contact[subject]" value="Deneme Dersi Kaydı">
+
+        <div class="saye-trial-form__group">
+          <label class="saye-trial-form__label" for="trial-name">Adın nedir?</label>
+          <input
+            class="saye-trial-form__input"
+            type="text"
+            id="trial-name"
+            name="contact[name]"
+            placeholder="Adın nedir?"
+            required>
+        </div>
+
+        <div class="saye-trial-form__group">
+          <label class="saye-trial-form__label" for="trial-email">Email adresin</label>
+          <input
+            class="saye-trial-form__input"
+            type="email"
+            id="trial-email"
+            name="contact[email]"
+            placeholder="Email adresin"
+            required>
+        </div>
+
+        <div class="saye-trial-form__radio-group">
+          <p class="saye-trial-form__radio-heading">Hangi dersi denemek istersin?</p>
+
+          <label class="saye-trial-form__radio-option">
+            <input
+              class="saye-trial-form__radio"
+              type="radio"
+              name="contact[body]"
+              value="Kundalini Yoga (90 dk, Salı 19:30)"
+              required>
+            <span class="saye-trial-form__radio-label">Kundalini Yoga (90 dk, Salı 19:30)</span>
+          </label>
+
+          <label class="saye-trial-form__radio-option">
+            <input
+              class="saye-trial-form__radio"
+              type="radio"
+              name="contact[body]"
+              value="Hamile Yogası (75 dk, Çarşamba 19:30)">
+            <span class="saye-trial-form__radio-label">Hamile Yogası (75 dk, Çarşamba 19:30)</span>
+          </label>
+        </div>
+
+        <button class="saye-trial-form__submit" type="submit">Deneme Dersine Kaydol</button>
+      </form>
+
+      <p class="saye-trial-form__disclaimer">E-posta almak istemiyorsan burada iptal et. KVKK uyumlu.</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Deneme Formu",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Deneme Formu" }]
+}
+{% endschema %}

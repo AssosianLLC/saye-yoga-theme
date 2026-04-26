@@ -1,0 +1,50 @@
+.saye-trial-hero {
+  background: var(--saye-beige);
+  padding: 64px 48px;
+}
+
+.saye-trial-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.saye-trial-hero__icon {
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.saye-trial-hero__heading {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.saye-trial-hero__text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--saye-dark);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media (max-width: 749px) {
+  .saye-trial-hero {
+    padding: 48px 24px;
+  }
+
+  .saye-trial-hero__heading {
+    font-size: 32px;
+  }
+
+  .saye-trial-hero__text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,20 @@
+{{- 'saye-trial-quote.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trial-quote" id="saye-trial-quote-{{ section.id }}">
+  <div class="saye-trial-quote__container page-width">
+    <blockquote class="saye-trial-quote__blockquote">
+      <p class="saye-trial-quote__text">"Yoga yalnızca beden pratikleri değil, zihin ve ruh uyumu. Bunu ilk dersinde hissetmeye başlayacaksın."</p>
+      <footer class="saye-trial-quote__attribution">— Gülşen Bozdoğan, Kundalini Yoga Eğitmeni</footer>
+    </blockquote>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Eğitmen Sözü",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Eğitmen Sözü" }]
+}
+{% endschema %}

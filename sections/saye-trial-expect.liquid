@@ -1,0 +1,37 @@
+{{- 'saye-trial-expect.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trial-expect" id="saye-trial-expect-{{ section.id }}">
+  <div class="saye-trial-expect__container page-width">
+    <div class="saye-trial-expect__grid">
+
+      <div class="saye-trial-expect__card">
+        <span class="saye-trial-expect__icon" aria-hidden="true">🫁</span>
+        <h3 class="saye-trial-expect__title">Pranayama (Nefes)</h3>
+        <p class="saye-trial-expect__desc">Derin nefes teknikleri. Stres azalır, odak artar.</p>
+      </div>
+
+      <div class="saye-trial-expect__card">
+        <span class="saye-trial-expect__icon" aria-hidden="true">📿</span>
+        <h3 class="saye-trial-expect__title">Mantra &amp; Meditasyon</h3>
+        <p class="saye-trial-expect__desc">Sesli tekrarlar, içsel huzur.</p>
+      </div>
+
+      <div class="saye-trial-expect__card">
+        <span class="saye-trial-expect__icon" aria-hidden="true">🧘</span>
+        <h3 class="saye-trial-expect__title">Kriya (Hareket)</h3>
+        <p class="saye-trial-expect__desc">Kontrollü hareketler. Enerji hareketini hissedersin.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Neler Bekliyor",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Neler Bekliyor" }]
+}
+{% endschema %}

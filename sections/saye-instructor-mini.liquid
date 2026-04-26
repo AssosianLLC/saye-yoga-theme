@@ -1,0 +1,44 @@
+{{- 'saye-instructor-mini.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-instructor-mini" id="saye-instructor-mini-{{ section.id }}">
+  <div class="saye-instructor-mini__container page-width">
+    <div class="saye-instructor-mini__grid">
+
+      <div class="saye-instructor-mini__image-wrapper">
+        <img
+          class="saye-instructor-mini__image"
+          src="{{ 'gulsen-mini.jpg' | asset_url }}"
+          alt="Gülşen Bozdoğan"
+          width="300"
+          height="300"
+          loading="lazy">
+      </div>
+
+      <div class="saye-instructor-mini__content">
+        <h3 class="saye-instructor-mini__name">Gülşen Bozdoğan</h3>
+        <p class="saye-instructor-mini__title">KRI Kundalini Yoga Eğitmeni</p>
+        <p class="saye-instructor-mini__bio">15+ yıl yoga pratiği, 8 yıl aktif ders. KRI sertifikalı, Yoga Alliance Hatha Yoga Eğitmeni.</p>
+        <div class="saye-instructor-mini__badges">
+          <span class="saye-instructor-mini__badge" aria-label="KRI Sertifikalı">🧘</span>
+          <span class="saye-instructor-mini__badge" aria-label="Yoga Alliance">📜</span>
+        </div>
+        <a class="saye-instructor-mini__link" href="/pages/egitmen">Eğitmeni Tanı →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Eğitmen Mini",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Eğitmen Mini"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,44 @@
+/* Saye Yoga — Packages Hero */
+.saye-packages-hero {
+  background: var(--saye-beige);
+}
+
+.saye-packages-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 48px;
+  text-align: center;
+}
+
+.saye-packages-hero__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1;
+  color: var(--saye-dark);
+  margin: 0 0 20px;
+}
+
+.saye-packages-hero__text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-packages-hero__container {
+    padding: 48px 24px;
+  }
+
+  .saye-packages-hero__heading {
+    font-size: 36px;
+  }
+
+  .saye-packages-hero__text {
+    font-size: 18px;
+  }
+}

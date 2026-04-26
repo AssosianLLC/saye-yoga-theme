@@ -1,0 +1,99 @@
+/* Saye Yoga — How It Works */
+.saye-how-it-works {
+  background: var(--saye-bg);
+}
+
+.saye-how-it-works__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 48px;
+}
+
+.saye-how-it-works__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--saye-dark);
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.saye-how-it-works__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.saye-how-it-works__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.saye-how-it-works__number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--saye-cta);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.saye-how-it-works__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--saye-dark);
+  margin: 0;
+}
+
+.saye-how-it-works__desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Connector line between steps */
+.saye-how-it-works__step:not(:last-child) {
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .saye-how-it-works__step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -16px;
+    width: 32px;
+    height: 2px;
+    background: var(--saye-beige);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .saye-how-it-works__container {
+    padding: 48px 24px;
+  }
+
+  .saye-how-it-works__steps {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .saye-how-it-works__heading {
+    font-size: 28px;
+  }
+}

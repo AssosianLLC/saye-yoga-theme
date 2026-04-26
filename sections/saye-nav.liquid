@@ -1,0 +1,53 @@
+{{- 'saye-nav.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-nav" id="saye-nav-{{ section.id }}">
+  <div class="saye-nav__container page-width">
+    <a class="saye-nav__logo" href="/">Saye Yoga</a>
+
+    <nav class="saye-nav__links" aria-label="Ana navigasyon">
+      <a class="saye-nav__link" href="/pages/kundalini-yoga">Kundalini Yoga</a>
+      <a class="saye-nav__link" href="/pages/hamile-yogasi">Hamile Yogası</a>
+      <a class="saye-nav__link" href="/pages/egitmen">Eğitmen</a>
+      <a class="saye-nav__link" href="/pages/iletisim">İletişim</a>
+    </nav>
+
+    <a class="saye-nav__cta saye-btn--primary" href="/products/deneme-dersi">Üye Ol</a>
+
+    <button
+      class="saye-nav__menu-btn"
+      aria-label="Menüyü aç"
+      aria-expanded="false"
+      onclick="
+        var menu = this.closest('.saye-nav__container').querySelector('.saye-nav__mobile-menu');
+        var open = menu.classList.toggle('saye-nav__mobile-menu--open');
+        this.setAttribute('aria-expanded', open);
+        this.textContent = open ? '✕' : '☰';
+      ">
+      ☰
+    </button>
+
+    <div class="saye-nav__mobile-menu" aria-label="Mobil navigasyon">
+      <nav class="saye-nav__mobile-links">
+        <a class="saye-nav__mobile-link" href="/pages/kundalini-yoga">Kundalini Yoga</a>
+        <a class="saye-nav__mobile-link" href="/pages/hamile-yogasi">Hamile Yogası</a>
+        <a class="saye-nav__mobile-link" href="/pages/egitmen">Eğitmen</a>
+        <a class="saye-nav__mobile-link" href="/pages/iletisim">İletişim</a>
+      </nav>
+      <a class="saye-nav__mobile-cta saye-btn--primary" href="/products/deneme-dersi">Üye Ol</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Navigasyon",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Navigasyon"
+    }
+  ]
+}
+{% endschema %}

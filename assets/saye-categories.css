@@ -1,0 +1,115 @@
+/* Saye Yoga — Category Cards */
+.saye-categories {
+  background: var(--saye-bg);
+}
+
+.saye-categories__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 48px;
+}
+
+.saye-categories__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--saye-dark);
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.saye-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.saye-categories__card {
+  background: var(--saye-beige);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saye-categories__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(60,36,21,0.1);
+}
+
+.saye-categories__card--kundalini {
+  border-top: 6px solid var(--saye-cta);
+}
+
+.saye-categories__card--hamile {
+  border-top: 6px solid var(--saye-sage);
+}
+
+.saye-categories__image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.saye-categories__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.saye-categories__body {
+  padding: 24px 28px 28px;
+}
+
+.saye-categories__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--saye-dark);
+  margin: 0 0 12px;
+}
+
+.saye-categories__desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin: 0 0 20px;
+}
+
+.saye-categories__link {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.saye-categories__link:hover {
+  opacity: 0.8;
+}
+
+.saye-categories__link--kundalini {
+  color: var(--saye-cta);
+}
+
+.saye-categories__link--sage {
+  color: var(--saye-sage);
+}
+
+@media screen and (max-width: 749px) {
+  .saye-categories__container {
+    padding: 48px 24px;
+  }
+
+  .saye-categories__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .saye-categories__heading {
+    font-size: 28px;
+  }
+}

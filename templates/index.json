@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "saye-announcement": {
+      "type": "saye-announcement",
+      "settings": {}
+    },
+    "saye-nav": {
+      "type": "saye-nav",
+      "settings": {}
+    },
+    "saye-hero": {
+      "type": "saye-hero",
+      "settings": {}
+    },
+    "saye-trust": {
+      "type": "saye-trust",
+      "settings": {}
+    },
+    "saye-categories": {
+      "type": "saye-categories",
+      "settings": {}
+    },
+    "saye-how-it-works": {
+      "type": "saye-how-it-works",
+      "settings": {}
+    },
+    "saye-instructor-mini": {
+      "type": "saye-instructor-mini",
+      "settings": {}
+    },
+    "saye-packages": {
+      "type": "saye-packages",
+      "settings": {}
+    },
+    "saye-testimonials": {
+      "type": "saye-testimonials",
+      "settings": {}
+    },
+    "saye-faq-home": {
+      "type": "saye-faq-home",
+      "settings": {}
+    },
+    "saye-cta-band": {
+      "type": "saye-cta-band",
+      "settings": {}
+    },
+    "saye-footer": {
+      "type": "saye-footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "saye-announcement",
+    "saye-nav",
+    "saye-hero",
+    "saye-trust",
+    "saye-categories",
+    "saye-how-it-works",
+    "saye-instructor-mini",
+    "saye-packages",
+    "saye-testimonials",
+    "saye-faq-home",
+    "saye-cta-band",
+    "saye-footer"
+  ]
+}

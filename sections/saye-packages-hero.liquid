@@ -1,0 +1,22 @@
+{{- 'saye-packages-hero.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-packages-hero" id="saye-packages-hero-{{ section.id }}">
+  <div class="saye-packages-hero__container page-width">
+    <h1 class="saye-packages-hero__heading">Kendi Ritminde Pratik Yap</h1>
+    <p class="saye-packages-hero__text">Salı, Çarşamba, Perşembe — her hafta aynı saatlerde canlı Zoom dersleri. Kayıtlara 14 gün erişim.</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Paketler Hero",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Paketler Hero"
+    }
+  ]
+}
+{% endschema %}

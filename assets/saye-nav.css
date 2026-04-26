@@ -1,0 +1,145 @@
+/* Saye Yoga — Navigation */
+.saye-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: var(--saye-bg);
+  border-bottom: 1px solid var(--saye-beige);
+  transition: box-shadow 0.3s ease;
+}
+
+.saye-nav.saye-nav--scrolled {
+  box-shadow: 0 2px 12px rgba(60,36,21,0.08);
+}
+
+.saye-nav__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saye-nav__logo {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--saye-dark);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.saye-nav__logo:hover {
+  opacity: 0.8;
+}
+
+.saye-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.saye-nav__link {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.saye-nav__link:hover {
+  color: var(--saye-cta);
+}
+
+.saye-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--saye-cta);
+  transition: width 0.2s ease;
+}
+
+.saye-nav__link:hover::after {
+  width: 100%;
+}
+
+.saye-nav__cta {
+  font-family: var(--font-body);
+}
+
+.saye-nav__menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--saye-dark);
+  cursor: pointer;
+  padding: 8px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Mobile Menu */
+.saye-nav__mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--saye-bg);
+  border-bottom: 1px solid var(--saye-beige);
+  padding: 16px 24px;
+  box-shadow: 0 4px 12px rgba(60,36,21,0.08);
+}
+
+.saye-nav__mobile-menu.saye-nav__mobile-menu--open {
+  display: block;
+}
+
+.saye-nav__mobile-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.saye-nav__mobile-link {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--saye-beige);
+}
+
+.saye-nav__mobile-cta {
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-nav__links {
+    display: none;
+  }
+
+  .saye-nav__cta {
+    display: none;
+  }
+
+  .saye-nav__menu-btn {
+    display: block;
+  }
+}

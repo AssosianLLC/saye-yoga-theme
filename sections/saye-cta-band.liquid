@@ -1,0 +1,23 @@
+{{- 'saye-cta-band.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-cta-band" id="saye-cta-band-{{ section.id }}">
+  <div class="saye-cta-band__container page-width">
+    <h2 class="saye-cta-band__heading">Hazırsan Başla</h2>
+    <p class="saye-cta-band__text">14 günün var. İlk derse katılmadığın takdirde ücret iadesi.</p>
+    <a class="saye-btn--white" href="/products/deneme-dersi">Ücretsiz Deneme Dersine Katıl →</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Bandı",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "CTA Bandı"
+    }
+  ]
+}
+{% endschema %}

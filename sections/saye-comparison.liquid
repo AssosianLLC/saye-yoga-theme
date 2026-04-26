@@ -1,0 +1,58 @@
+{{- 'saye-comparison.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-comparison" id="saye-comparison-{{ section.id }}">
+  <div class="saye-comparison__container page-width">
+    <details class="saye-comparison__accordion">
+      <summary class="saye-comparison__toggle">
+        Hangisini seçmeliyim?
+        <span class="saye-comparison__chevron" aria-hidden="true">▼</span>
+      </summary>
+      <div class="saye-comparison__table">
+        <div class="saye-comparison__row saye-comparison__row--header">
+          <div class="saye-comparison__cell saye-comparison__cell--label">&nbsp;</div>
+          <div class="saye-comparison__cell saye-comparison__cell--header saye-comparison__cell--kundalini">
+            <span class="saye-comparison__header-color--kundalini">Kundalini Yoga</span>
+          </div>
+          <div class="saye-comparison__cell saye-comparison__cell--header saye-comparison__cell--hamile">
+            <span class="saye-comparison__header-color--hamile">Hamile Yogası</span>
+          </div>
+        </div>
+        <div class="saye-comparison__row">
+          <div class="saye-comparison__cell saye-comparison__cell--label">Ders süresi</div>
+          <div class="saye-comparison__cell saye-comparison__cell--kundalini">90 dk</div>
+          <div class="saye-comparison__cell saye-comparison__cell--hamile">75 dk</div>
+        </div>
+        <div class="saye-comparison__row">
+          <div class="saye-comparison__cell saye-comparison__cell--label">Haftada kaç gün</div>
+          <div class="saye-comparison__cell saye-comparison__cell--kundalini">2 (Salı + Perşembe)</div>
+          <div class="saye-comparison__cell saye-comparison__cell--hamile">1 (Çarşamba)</div>
+        </div>
+        <div class="saye-comparison__row">
+          <div class="saye-comparison__cell saye-comparison__cell--label">Ders saati</div>
+          <div class="saye-comparison__cell saye-comparison__cell--kundalini">19:30 İstanbul</div>
+          <div class="saye-comparison__cell saye-comparison__cell--hamile">19:30 İstanbul</div>
+        </div>
+        <div class="saye-comparison__row">
+          <div class="saye-comparison__cell saye-comparison__cell--label">Kayıt süresi</div>
+          <div class="saye-comparison__cell saye-comparison__cell--kundalini">14 gün</div>
+          <div class="saye-comparison__cell saye-comparison__cell--hamile">14 gün</div>
+        </div>
+        <div class="saye-comparison__row">
+          <div class="saye-comparison__cell saye-comparison__cell--label">Fiyat</div>
+          <div class="saye-comparison__cell saye-comparison__cell--kundalini">6.950 ₺/ay</div>
+          <div class="saye-comparison__cell saye-comparison__cell--hamile">3.950 ₺/ay</div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Paket Karşılaştırma",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Paket Karşılaştırma" }]
+}
+{% endschema %}

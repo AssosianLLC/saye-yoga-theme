@@ -1,0 +1,58 @@
+{{- 'saye-categories.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-categories" id="saye-categories-{{ section.id }}">
+  <div class="saye-categories__container page-width">
+    <h2 class="saye-categories__heading">Hangi Derse Başlamak İstersin?</h2>
+    <div class="saye-categories__grid">
+
+      <div class="saye-categories__card saye-categories__card--kundalini">
+        <div class="saye-categories__image-wrapper">
+          <img
+            class="saye-categories__image"
+            src="{{ 'kundalini-category.jpg' | asset_url }}"
+            alt="Kundalini Yoga dersi"
+            width="300"
+            height="200"
+            loading="lazy">
+        </div>
+        <div class="saye-categories__body">
+          <h3 class="saye-categories__title">Kundalini Yoga</h3>
+          <p class="saye-categories__desc">Nefes, mantra ve hareketin buluştuğu 90 dakikalık enerji uyandırma pratiği.</p>
+          <a class="saye-categories__link saye-categories__link--kundalini" href="/pages/kundalini-yoga">Kundalini Yoga'yı Keşfet →</a>
+        </div>
+      </div>
+
+      <div class="saye-categories__card saye-categories__card--hamile">
+        <div class="saye-categories__image-wrapper">
+          <img
+            class="saye-categories__image"
+            src="{{ 'pregnancy-category.jpg' | asset_url }}"
+            alt="Hamile Yogası dersi"
+            width="300"
+            height="200"
+            loading="lazy">
+        </div>
+        <div class="saye-categories__body">
+          <h3 class="saye-categories__title">Hamile Yogası</h3>
+          <p class="saye-categories__desc">14. haftadan itibaren güvenli, doğuma hazırlayan pratik.</p>
+          <a class="saye-categories__link saye-categories__link--sage" href="/pages/hamile-yogasi">Hamile Yogası'nı Keşfet →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ders Kategorileri",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ders Kategorileri"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,144 @@
+/* Saye Yoga — Comparison Accordion */
+.saye-comparison {
+  background: var(--saye-bg);
+}
+
+.saye-comparison__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 48px;
+}
+
+.saye-comparison__accordion {
+  max-width: 920px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--saye-beige);
+  box-shadow: 0 2px 12px rgba(60,36,21,0.08);
+}
+
+.saye-comparison__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 28px;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--saye-dark);
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.2s ease;
+}
+
+.saye-comparison__toggle:hover {
+  background: var(--saye-rose);
+}
+
+.saye-comparison__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.saye-comparison__chevron {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+  color: var(--saye-dark);
+  opacity: 0.6;
+}
+
+.saye-comparison__accordion[open] .saye-comparison__chevron {
+  transform: rotate(180deg);
+}
+
+/* --- Comparison Table (CSS Grid, not <table>) --- */
+.saye-comparison__table {
+  padding: 0 28px 28px;
+}
+
+.saye-comparison__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--saye-bg);
+}
+
+.saye-comparison__row:last-child {
+  border-bottom: none;
+}
+
+.saye-comparison__row--header {
+  border-bottom: 2px solid var(--saye-dark);
+}
+
+.saye-comparison__cell {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--saye-dark);
+  padding: 14px 12px;
+}
+
+.saye-comparison__cell--label {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.saye-comparison__cell--header {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--saye-dark);
+  padding: 14px 12px 10px;
+}
+
+.saye-comparison__cell--kundalini {
+  text-align: center;
+}
+
+.saye-comparison__cell--hamile {
+  text-align: center;
+}
+
+.saye-comparison__header-color--kundalini {
+  color: var(--saye-cta);
+}
+
+.saye-comparison__header-color--hamile {
+  color: var(--saye-sage);
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 749px) {
+  .saye-comparison {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .saye-comparison__container {
+    padding: 16px 24px;
+  }
+
+  .saye-comparison__toggle {
+    font-size: 20px;
+    padding: 16px 20px;
+  }
+
+  .saye-comparison__table {
+    padding: 0 16px 16px;
+  }
+
+  .saye-comparison__cell {
+    font-size: 13px;
+    padding: 10px 6px;
+  }
+
+  .saye-comparison__cell--header {
+    font-size: 14px;
+  }
+}

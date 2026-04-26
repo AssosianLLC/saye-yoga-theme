@@ -1,0 +1,30 @@
+{{- 'saye-announcement.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-announcement" id="saye-announcement-{{ section.id }}">
+  <div class="saye-announcement__container page-width">
+    <p class="saye-announcement__text">
+      ✨ Ücretsiz Kundalini Yoga Deneme Dersi — Bu hafta Salı 19:30 ·
+      <a class="saye-announcement__link" href="/products/deneme-dersi">Yerini Ayır →</a>
+    </p>
+    <button
+      class="saye-announcement__close"
+      aria-label="Duyuruyu kapat"
+      onclick="this.closest('.saye-announcement').style.display='none'">
+      ✕
+    </button>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Duyuru Bandı",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Duyuru Bandı"
+    }
+  ]
+}
+{% endschema %}

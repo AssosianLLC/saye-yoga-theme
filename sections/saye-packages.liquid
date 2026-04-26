@@ -1,0 +1,84 @@
+{{- 'saye-packages.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-packages" id="saye-packages-{{ section.id }}">
+  <div class="saye-packages__container page-width">
+    <h2 class="saye-packages__heading">Paketlerimiz</h2>
+    <div class="saye-packages__grid">
+
+      <div class="saye-packages__card saye-packages__card--kundalini">
+        <h2 class="saye-packages__price saye-packages__price--kundalini">6.950 ₺/ay</h2>
+        <p class="saye-packages__commitment">Taahhüt yok</p>
+        <ul class="saye-packages__features">
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--kundalini" aria-hidden="true">✓</span>
+            Haftada 2 canlı Zoom dersi (90 dk)
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--kundalini" aria-hidden="true">✓</span>
+            Tüm ders kayıtlarına 14 gün erişim
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--kundalini" aria-hidden="true">✓</span>
+            Özel WhatsApp grubu
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--kundalini" aria-hidden="true">✓</span>
+            Ayda 1 Soru-Cevap seans
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--kundalini" aria-hidden="true">✓</span>
+            Kundalini Yoga PDF'leri
+          </li>
+        </ul>
+        <div class="saye-packages__cta">
+          <a class="saye-btn--primary" href="/products/kundalini-yoga">Kundalini Yoga'ya Üye Ol</a>
+        </div>
+      </div>
+
+      <div class="saye-packages__card saye-packages__card--hamile">
+        <h2 class="saye-packages__price saye-packages__price--hamile">3.950 ₺/ay</h2>
+        <p class="saye-packages__commitment">Taahhüt yok</p>
+        <ul class="saye-packages__features">
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--hamile" aria-hidden="true">✓</span>
+            Haftada 1 canlı Zoom dersi (75 dk)
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--hamile" aria-hidden="true">✓</span>
+            Tüm ders kayıtlarına 14 gün erişim
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--hamile" aria-hidden="true">✓</span>
+            Hamilelik meditasyon &amp; solunum PDF
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--hamile" aria-hidden="true">✓</span>
+            Doğuma hazırlık rehberi
+          </li>
+          <li class="saye-packages__feature">
+            <span class="saye-packages__check saye-packages__check--hamile" aria-hidden="true">✓</span>
+            Ayda 1 Soru-Cevap seans
+          </li>
+        </ul>
+        <div class="saye-packages__cta">
+          <a class="saye-btn--sage" href="/products/hamile-yogasi">Hamile Yogası'na Üye Ol</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Paketler",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Paketler"
+    }
+  ]
+}
+{% endschema %}

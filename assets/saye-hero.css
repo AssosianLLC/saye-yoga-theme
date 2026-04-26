@@ -1,0 +1,97 @@
+/* Saye Yoga — Hero Section */
+.saye-hero {
+  background: var(--saye-beige);
+  overflow: hidden;
+}
+
+.saye-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 48px;
+}
+
+.saye-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.saye-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.saye-hero__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1;
+  color: var(--saye-dark);
+  margin: 0;
+}
+
+.saye-hero__text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.85;
+  margin: 0;
+  max-width: 520px;
+}
+
+.saye-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.saye-hero__image-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 500px;
+  box-shadow: 0 2px 12px rgba(60,36,21,0.08);
+}
+
+.saye-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-hero__container {
+    padding: 48px 24px;
+  }
+
+  .saye-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .saye-hero__heading {
+    font-size: 36px;
+  }
+
+  .saye-hero__text {
+    font-size: 18px;
+  }
+
+  .saye-hero__image-wrapper {
+    height: 350px;
+  }
+
+  .saye-hero__actions {
+    flex-direction: column;
+  }
+
+  .saye-hero__actions .saye-btn--primary,
+  .saye-hero__actions .saye-btn--outline {
+    width: 100%;
+    justify-content: center;
+  }
+}

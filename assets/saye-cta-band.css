@@ -1,0 +1,35 @@
+/* Saye Yoga — CTA Band */
+.saye-cta-band {
+  background: var(--saye-cta);
+  color: #fff;
+}
+
+.saye-cta-band__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  text-align: center;
+}
+
+.saye-cta-band__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.saye-cta-band__text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.9;
+  margin: 0 0 32px;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-cta-band__container { padding: 48px 24px; }
+  .saye-cta-band__heading { font-size: 28px; }
+  .saye-cta-band__text { font-size: 18px; }
+}

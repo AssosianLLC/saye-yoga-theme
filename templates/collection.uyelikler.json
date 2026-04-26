@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "saye-packages-hero": {
+      "type": "saye-packages-hero",
+      "settings": {}
+    },
+    "saye-package-grid": {
+      "type": "saye-package-grid",
+      "settings": {}
+    },
+    "saye-comparison": {
+      "type": "saye-comparison",
+      "settings": {}
+    },
+    "saye-trial-banner": {
+      "type": "saye-trial-banner",
+      "settings": {}
+    }
+  },
+  "order": [
+    "saye-packages-hero",
+    "saye-package-grid",
+    "saye-comparison",
+    "saye-trial-banner"
+  ]
+}

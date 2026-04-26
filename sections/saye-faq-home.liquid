@@ -1,0 +1,56 @@
+{{- 'saye-faq-home.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-faq-home" id="saye-faq-home-{{ section.id }}">
+  <div class="saye-faq-home__container page-width">
+    <h2 class="saye-faq-home__heading">Sıkça Sorulan Sorular</h2>
+    <div class="saye-faq-home__list">
+
+      <details class="saye-faq-home__item">
+        <summary class="saye-faq-home__question">
+          İlk dersime nasıl katılırım?
+          <span class="saye-faq-home__chevron" aria-hidden="true">▼</span>
+        </summary>
+        <p class="saye-faq-home__answer">Ödeme sonrası 2 dakika içinde Zoom linki ve ders programı email'ine gelir. Ders saatinde linke tıklaman yeterli — Zoom hesabı zorunlu değildir.</p>
+      </details>
+
+      <details class="saye-faq-home__item">
+        <summary class="saye-faq-home__question">
+          Dersi kaçırırsam ne olur?
+          <span class="saye-faq-home__chevron" aria-hidden="true">▼</span>
+        </summary>
+        <p class="saye-faq-home__answer">Her dersin kaydı 14 gün içinde izlenebilir. Hiçbir ders kaybolmaz.</p>
+      </details>
+
+      <details class="saye-faq-home__item">
+        <summary class="saye-faq-home__question">
+          Aboneliği nasıl iptal ederim?
+          <span class="saye-faq-home__chevron" aria-hidden="true">▼</span>
+        </summary>
+        <p class="saye-faq-home__answer">İstediğin an, taahhütsüz iptal edebilirsin. Gizli ücret yoktur. 14 gün içinde, ilk dersine katılmamışsan tam iade yapılır.</p>
+      </details>
+
+      <details class="saye-faq-home__item">
+        <summary class="saye-faq-home__question">
+          Başka pakete geçebilir miyim?
+          <span class="saye-faq-home__chevron" aria-hidden="true">▼</span>
+        </summary>
+        <p class="saye-faq-home__answer">Evet, dilediğin zaman paket değiştirebilirsin. Fark bir sonraki dönemde yansır.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "SSS Ana Sayfa",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "SSS Ana Sayfa"
+    }
+  ]
+}
+{% endschema %}

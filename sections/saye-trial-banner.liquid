@@ -1,0 +1,21 @@
+{{- 'saye-trial-banner.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trial-banner" id="saye-trial-banner-{{ section.id }}">
+  <div class="saye-trial-banner__container page-width">
+    <h3 class="saye-trial-banner__heading">Hangisi Bana Uygun Bilmiyorum?</h3>
+    <p class="saye-trial-banner__text">Ücretsiz deneme dersine katıl — hiçbir ödeme bilgisine ihtiyaç yok.</p>
+    <div class="saye-trial-banner__cta">
+      <a class="saye-btn--outline" href="/products/deneme-dersi">Deneme Dersine Katıl</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Deneme Dersi Bandı",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Deneme Dersi Bandı" }]
+}
+{% endschema %}

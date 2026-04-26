@@ -1,0 +1,59 @@
+/* Saye Yoga — Trial Banner */
+.saye-trial-banner {
+  background: var(--saye-rose);
+}
+
+.saye-trial-banner__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px;
+  text-align: center;
+}
+
+.saye-trial-banner__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--saye-dark);
+  margin: 0 0 12px;
+}
+
+.saye-trial-banner__text {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.85;
+  margin: 0 0 28px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.saye-trial-banner__cta .saye-btn--outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.saye-trial-banner__cta .saye-btn--outline:hover {
+  background: var(--saye-dark);
+  color: var(--saye-bg);
+}
+
+@media screen and (max-width: 749px) {
+  .saye-trial-banner__container {
+    padding: 32px 24px;
+  }
+
+  .saye-trial-banner__heading {
+    font-size: 22px;
+  }
+
+  .saye-trial-banner__text {
+    font-size: 16px;
+  }
+}

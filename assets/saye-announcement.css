@@ -1,0 +1,75 @@
+/* Saye Yoga — Announcement Bar */
+.saye-announcement {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  width: 100%;
+  background: var(--saye-cta);
+  color: #fff;
+  padding: 12px 16px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.saye-announcement__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saye-announcement__text {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.saye-announcement__link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.saye-announcement__link:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.saye-announcement__close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  padding: 4px;
+  font-size: 18px;
+  line-height: 1;
+  display: none;
+}
+
+.saye-announcement__close:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-announcement__close {
+    display: block;
+  }
+
+  .saye-announcement__text {
+    padding-right: 28px;
+  }
+}

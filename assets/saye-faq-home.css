@@ -1,0 +1,83 @@
+/* Saye Yoga — FAQ Home Accordion */
+.saye-faq-home {
+  background: var(--saye-beige);
+}
+
+.saye-faq-home__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.saye-faq-home__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--saye-dark);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.saye-faq-home__list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.saye-faq-home__item {
+  background: var(--saye-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+}
+
+.saye-faq-home__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--saye-dark);
+  cursor: pointer;
+  list-style: none;
+  transition: background 0.2s ease;
+}
+
+.saye-faq-home__question:hover {
+  background: var(--saye-rose);
+}
+
+.saye-faq-home__question::-webkit-details-marker {
+  display: none;
+}
+
+.saye-faq-home__chevron {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.saye-faq-home__item[open] .saye-faq-home__chevron {
+  transform: rotate(180deg);
+}
+
+.saye-faq-home__answer {
+  padding: 0 24px 20px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-faq-home__container { padding: 32px 24px; }
+  .saye-faq-home__heading { font-size: 28px; }
+}

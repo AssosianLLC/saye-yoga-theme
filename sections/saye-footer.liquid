@@ -1,0 +1,63 @@
+{{- 'saye-footer.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-footer" id="saye-footer-{{ section.id }}">
+  <div class="saye-footer__container page-width">
+    <div class="saye-footer__grid">
+
+      <div class="saye-footer__brand">
+        <h2 class="saye-footer__brand-name">Saye Yoga</h2>
+        <p class="saye-footer__brand-desc">Online canlı yoga ve meditasyon dersleri</p>
+        <div class="saye-footer__contact">
+          <a class="saye-footer__contact-link" href="mailto:info@sayeyoga.com">📧 info@sayeyoga.com</a>
+          <a class="saye-footer__contact-link" href="/pages/iletisim">📷 @sayeyoga</a>
+        </div>
+      </div>
+
+      <div class="saye-footer__nav-group">
+        <h4 class="saye-footer__nav-title">Dersler</h4>
+        <ul class="saye-footer__nav-list">
+          <li><a class="saye-footer__nav-link" href="/pages/kundalini-yoga">Kundalini Yoga</a></li>
+          <li><a class="saye-footer__nav-link" href="/pages/hamile-yogasi">Hamile Yogası</a></li>
+        </ul>
+      </div>
+
+      <div class="saye-footer__nav-group">
+        <h4 class="saye-footer__nav-title">Hakkında</h4>
+        <ul class="saye-footer__nav-list">
+          <li><a class="saye-footer__nav-link" href="/pages/egitmen">Eğitmen</a></li>
+          <li><a class="saye-footer__nav-link" href="/blogs/news">Blog</a></li>
+          <li><a class="saye-footer__nav-link" href="/pages/iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="saye-footer__nav-group">
+        <h4 class="saye-footer__nav-title">Hukuk</h4>
+        <ul class="saye-footer__nav-list">
+          <li><a class="saye-footer__nav-link" href="/policies/privacy-policy">Gizlilik</a></li>
+          <li><a class="saye-footer__nav-link" href="/policies/refund-policy">İade</a></li>
+          <li><a class="saye-footer__nav-link" href="/policies/terms-of-service">Kullanım</a></li>
+          <li><a class="saye-footer__nav-link" href="/pages/kvkk">KVKK</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="saye-footer__bottom">
+      <p class="saye-footer__copy">© 2026 Saye Yoga · Tüm hakları saklıdır. Pratiğe başlamadan lütfen hekiminize danışınız.</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Footer",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Footer"
+    }
+  ]
+}
+{% endschema %}

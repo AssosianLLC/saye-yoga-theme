@@ -1,0 +1,39 @@
+{{- 'saye-hero.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-hero" id="saye-hero-{{ section.id }}">
+  <div class="saye-hero__container page-width">
+    <div class="saye-hero__grid">
+      <div class="saye-hero__content">
+        <h1 class="saye-hero__heading">Nefesinle başla, kendi ritminde derinleş.</h1>
+        <p class="saye-hero__text">Zoom üzerinden Canlı Kundalini Yoga ve Hamile Yogası. Küçük gruplar, sertifikalı eğitmen, esnek üyelik.</p>
+        <div class="saye-hero__actions">
+          <a class="saye-btn--primary" href="/products/deneme-dersi">Ücretsiz Deneme</a>
+          <a class="saye-btn--outline" href="#saye-packages">Paketleri Gör</a>
+        </div>
+      </div>
+      <div class="saye-hero__image-wrapper">
+        <img
+          class="saye-hero__image"
+          src="{{ 'instructor-hero.jpg' | asset_url }}"
+          alt="Gülşen yoga dersi verirken"
+          width="400"
+          height="500"
+          loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}

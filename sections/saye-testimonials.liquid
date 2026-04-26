@@ -1,0 +1,26 @@
+{{- 'saye-testimonials.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-testimonials" id="saye-testimonials-{{ section.id }}">
+  <div class="saye-testimonials__container page-width">
+    <div class="saye-testimonials__stars">
+      <span class="saye-testimonials__star-icons" aria-label="5 üzerinden 5 yıldız">⭐⭐⭐⭐⭐</span>
+      <span class="saye-testimonials__rating">5.0</span>
+    </div>
+    <p class="saye-testimonials__quote">"İlk üyelerimizi kabul ediyoruz. Deneyimini paylaşmak ister misin?"</p>
+    <p class="saye-testimonials__note">— Gerçek kullanıcı yorumları —</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kullanıcı Yorumları",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Kullanıcı Yorumları"
+    }
+  ]
+}
+{% endschema %}

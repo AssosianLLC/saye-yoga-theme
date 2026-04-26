@@ -1,0 +1,105 @@
+/* Saye Yoga — Package Comparison */
+.saye-packages {
+  background: var(--saye-bg);
+}
+
+.saye-packages__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 48px;
+}
+
+.saye-packages__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--saye-dark);
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.saye-packages__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.saye-packages__card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(60,36,21,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saye-packages__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(60,36,21,0.12);
+}
+
+.saye-packages__card--kundalini { border-top: 4px solid var(--saye-cta); }
+.saye-packages__card--hamile { border-top: 4px solid var(--saye-sage); }
+
+.saye-packages__price {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0 0 4px;
+}
+
+.saye-packages__price--kundalini { color: var(--saye-cta); }
+.saye-packages__price--hamile { color: var(--saye-sage); }
+
+.saye-packages__commitment {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--saye-dark);
+  opacity: 0.6;
+  margin: 0 0 24px;
+}
+
+.saye-packages__features {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.saye-packages__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--saye-dark);
+  opacity: 0.85;
+}
+
+.saye-packages__check {
+  flex-shrink: 0;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.saye-packages__check--kundalini { color: var(--saye-cta); }
+.saye-packages__check--hamile { color: var(--saye-sage); }
+
+.saye-packages__cta {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-packages__container { padding: 48px 24px; }
+  .saye-packages__grid { grid-template-columns: 1fr; }
+  .saye-packages__heading { font-size: 28px; }
+}

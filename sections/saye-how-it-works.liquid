@@ -1,0 +1,42 @@
+{{- 'saye-how-it-works.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-how-it-works" id="saye-how-it-works-{{ section.id }}">
+  <div class="saye-how-it-works__container page-width">
+    <h2 class="saye-how-it-works__heading">İlk Dersin Nasıl Başlar?</h2>
+    <div class="saye-how-it-works__steps">
+
+      <div class="saye-how-it-works__step">
+        <div class="saye-how-it-works__number" aria-hidden="true">1</div>
+        <h3 class="saye-how-it-works__title">Üye Ol ve Deneme Dersine Katıl</h3>
+        <p class="saye-how-it-works__desc">Üyelik Formunu Doldur</p>
+      </div>
+
+      <div class="saye-how-it-works__step">
+        <div class="saye-how-it-works__number" aria-hidden="true">2</div>
+        <h3 class="saye-how-it-works__title">Hesabından Dersini Seç</h3>
+        <p class="saye-how-it-works__desc">Ders Saatinde Hesabına Giriş Yap.</p>
+      </div>
+
+      <div class="saye-how-it-works__step">
+        <div class="saye-how-it-works__number" aria-hidden="true">3</div>
+        <h3 class="saye-how-it-works__title">Ders Kaydına Ulaş</h3>
+        <p class="saye-how-it-works__desc">Dersler kaydedilir ve 14 Gün Boyunca Hesabında Kalır.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Nasıl Başlar",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Nasıl Başlar"
+    }
+  ]
+}
+{% endschema %}

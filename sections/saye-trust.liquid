@@ -1,0 +1,38 @@
+{{- 'saye-trust.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trust" id="saye-trust-{{ section.id }}">
+  <div class="saye-trust__container page-width">
+    <h2 class="saye-trust__heading">Neden Saye Yoga?</h2>
+    <div class="saye-trust__grid">
+      <div class="saye-trust__card">
+        <span class="saye-trust__icon" aria-hidden="true">👥</span>
+        <h3 class="saye-trust__title">Küçük grup, kişisel alan</h3>
+        <p class="saye-trust__text">Ders başına max 15 kişi.</p>
+      </div>
+      <div class="saye-trust__card">
+        <span class="saye-trust__icon" aria-hidden="true">🏠</span>
+        <h3 class="saye-trust__title">Neredeysen oradan pratik</h3>
+        <p class="saye-trust__text">Zoom'dan katıl. Kameranı açmak zorunda değilsin.</p>
+      </div>
+      <div class="saye-trust__card">
+        <span class="saye-trust__icon" aria-hidden="true">🔄</span>
+        <h3 class="saye-trust__title">Taahhütsüz</h3>
+        <p class="saye-trust__text">İstediğin zaman iptal, ilk derse katılmadığın takdirde ücret iadesi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Güven Rozetleri",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Güven Rozetleri"
+    }
+  ]
+}
+{% endschema %}

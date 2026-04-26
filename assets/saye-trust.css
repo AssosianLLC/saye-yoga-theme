@@ -1,0 +1,76 @@
+/* Saye Yoga — Trust Badges */
+.saye-trust {
+  background: var(--saye-bg);
+}
+
+.saye-trust__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 48px;
+}
+
+.saye-trust__heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--saye-dark);
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.saye-trust__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.saye-trust__card {
+  background: var(--saye-beige);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saye-trust__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(60,36,21,0.1);
+}
+
+.saye-trust__icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.saye-trust__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--saye-dark);
+  margin: 0 0 8px;
+}
+
+.saye-trust__text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .saye-trust__container {
+    padding: 48px 24px;
+  }
+
+  .saye-trust__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .saye-trust__heading {
+    font-size: 28px;
+  }
+}

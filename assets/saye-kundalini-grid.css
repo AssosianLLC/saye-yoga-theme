@@ -1,0 +1,58 @@
+.saye-kundalini-grid {
+  background-color: var(--saye-beige);
+  padding: 48px;
+}
+
+.saye-kundalini-grid__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.saye-kundalini-grid__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.saye-kundalini-grid__item {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(60, 36, 21, 0.08);
+  text-align: center;
+}
+
+.saye-kundalini-grid__icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.saye-kundalini-grid__title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--saye-dark);
+  margin-bottom: 12px;
+}
+
+.saye-kundalini-grid__text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+}
+
+@media (max-width: 992px) {
+  .saye-kundalini-grid__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .saye-kundalini-grid {
+    padding: 32px 24px;
+  }
+  
+  .saye-kundalini-grid__list {
+    grid-template-columns: 1fr;
+  }
+}

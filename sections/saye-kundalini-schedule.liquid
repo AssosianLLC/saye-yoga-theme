@@ -1,0 +1,79 @@
+{{- 'saye-kundalini-schedule.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-kundalini-schedule" id="saye-kundalini-schedule-{{ section.id }}">
+  <div class="saye-kundalini-schedule__container page-width">
+    <h2 class="saye-kundalini-schedule__heading">{{ section.settings.heading | escape }}</h2>
+    
+    <div class="saye-kundalini-schedule__list">
+      {% for block in section.blocks %}
+        <div class="saye-kundalini-schedule__item" {{ block.shopify_attributes }}>
+          <div class="saye-kundalini-schedule__day">{{ block.settings.day | escape }}</div>
+          <div class="saye-kundalini-schedule__topics">{{ block.settings.topics | escape }}</div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <p class="saye-kundalini-schedule__note">{{ section.settings.note | escape }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kundalini Schedule",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Başlık",
+      "default": "Bu Ayın Konuları"
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Not",
+      "default": "Tema haftaya göre değişir. Tüm kayıtlara 14 gün erişim."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "schedule_item",
+      "name": "Program Elemanı",
+      "settings": [
+        {
+          "type": "text",
+          "id": "day",
+          "label": "Gün ve Saat"
+        },
+        {
+          "type": "text",
+          "id": "topics",
+          "label": "Konular"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundalini Schedule",
+      "blocks": [
+        {
+          "type": "schedule_item",
+          "settings": {
+            "day": "Salı 19:30",
+            "topics": "Kriya + Pranayama + Meditasyon"
+          }
+        },
+        {
+          "type": "schedule_item",
+          "settings": {
+            "day": "Perşembe 19:30",
+            "topics": "Mantra + Chakra Balancing + Savasana"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

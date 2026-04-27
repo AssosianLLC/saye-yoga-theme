@@ -1,0 +1,73 @@
+.saye-kundalini-schedule {
+  background-color: white;
+  padding: 48px;
+}
+
+.saye-kundalini-schedule__container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.saye-kundalini-schedule__heading {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  color: var(--saye-dark);
+  margin-bottom: 32px;
+}
+
+.saye-kundalini-schedule__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.saye-kundalini-schedule__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--saye-bg);
+  border-radius: 12px;
+}
+
+.saye-kundalini-schedule__day {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--saye-cta);
+}
+
+.saye-kundalini-schedule__topics {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--saye-dark);
+  text-align: right;
+}
+
+.saye-kundalini-schedule__note {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--saye-dark);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .saye-kundalini-schedule {
+    padding: 32px 24px;
+  }
+  
+  .saye-kundalini-schedule__heading {
+    font-size: 28px;
+  }
+  
+  .saye-kundalini-schedule__item {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .saye-kundalini-schedule__topics {
+    text-align: center;
+  }
+}

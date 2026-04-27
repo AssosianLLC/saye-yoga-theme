@@ -1,0 +1,42 @@
+{{- 'saye-kundalini-hero.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-kundalini-hero" id="saye-kundalini-hero-{{ section.id }}">
+  <div class="saye-kundalini-hero__container page-width">
+    <h1 class="saye-kundalini-hero__heading">{{ section.settings.heading | escape }}</h1>
+    <p class="saye-kundalini-hero__subtext">{{ section.settings.subtext | escape }}</p>
+    <div class="saye-kundalini-hero__details">{{ section.settings.details | escape }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kundalini Hero",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Başlık",
+      "default": "Kundalini Yoga"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Alt Metin",
+      "default": "Nefes, mantra ve hareketin buluştuğu enerji uyandırma pratiği."
+    },
+    {
+      "type": "text",
+      "id": "details",
+      "label": "Detaylar",
+      "default": "90 dakika · Haftada 2 gün · Salı + Perşembe 19:30 (İstanbul saati)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundalini Hero"
+    }
+  ]
+}
+{% endschema %}

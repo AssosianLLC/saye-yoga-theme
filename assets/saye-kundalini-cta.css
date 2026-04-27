@@ -1,0 +1,72 @@
+.saye-kundalini-cta {
+  background-color: white;
+  padding: 48px;
+}
+
+.saye-kundalini-cta__container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--saye-bg);
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(60, 36, 21, 0.08);
+}
+
+.saye-kundalini-cta__heading {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  color: var(--saye-dark);
+  margin-bottom: 16px;
+}
+
+.saye-kundalini-cta__price {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  color: var(--saye-cta);
+  margin-bottom: 8px;
+}
+
+.saye-kundalini-cta__subtext {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+
+.saye-kundalini-cta__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.saye-kundalini-cta__link {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--saye-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.saye-kundalini-cta__link:hover {
+  color: var(--saye-cta);
+}
+
+@media (max-width: 768px) {
+  .saye-kundalini-cta {
+    padding: 32px 24px;
+  }
+  
+  .saye-kundalini-cta__container {
+    padding: 32px 24px;
+  }
+  
+  .saye-kundalini-cta__price {
+    font-size: 28px;
+  }
+}

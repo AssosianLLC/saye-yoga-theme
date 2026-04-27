@@ -1,0 +1,47 @@
+.saye-kundalini-hero {
+  background-color: var(--saye-cta);
+  color: white;
+  padding: 80px 48px;
+}
+
+.saye-kundalini-hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.saye-kundalini-hero__heading {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.saye-kundalini-hero__subtext {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+
+.saye-kundalini-hero__details {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .saye-kundalini-hero {
+    padding: 48px 24px;
+  }
+  
+  .saye-kundalini-hero__heading {
+    font-size: 36px;
+  }
+}

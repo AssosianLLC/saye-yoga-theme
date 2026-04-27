@@ -1,0 +1,76 @@
+{{- 'saye-kundalini-for-whom.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-kundalini-for-whom" id="saye-kundalini-for-whom-{{ section.id }}">
+  <div class="saye-kundalini-for-whom__container page-width">
+    <h2 class="saye-kundalini-for-whom__heading">{{ section.settings.heading | escape }}</h2>
+    
+    <div class="saye-kundalini-for-whom__list">
+      {% for block in section.blocks %}
+        <div class="saye-kundalini-for-whom__item" {{ block.shopify_attributes }}>
+          <div class="saye-kundalini-for-whom__icon">✓</div>
+          <div class="saye-kundalini-for-whom__text">{{ block.settings.text | escape }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kundalini Kimler İçin",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Başlık",
+      "default": "Hangileri İçin?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "for_whom_item",
+      "name": "Madde",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Metin"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundalini Kimler İçin",
+      "blocks": [
+        {
+          "type": "for_whom_item",
+          "settings": {
+            "text": "Kundalini Yoga'da düzenli pratik kurmak isteyenler"
+          }
+        },
+        {
+          "type": "for_whom_item",
+          "settings": {
+            "text": "Hayatına haftada 2 gün sabit ritüel eklemek isteyenler"
+          }
+        },
+        {
+          "type": "for_whom_item",
+          "settings": {
+            "text": "Yoğun nefes ve enerji pratiği arayanlar"
+          }
+        },
+        {
+          "type": "for_whom_item",
+          "settings": {
+            "text": "Meditasyon derinleştirmek isteyenler"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

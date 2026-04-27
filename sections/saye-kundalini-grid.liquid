@@ -1,0 +1,87 @@
+{{- 'saye-kundalini-grid.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-kundalini-grid" id="saye-kundalini-grid-{{ section.id }}">
+  <div class="saye-kundalini-grid__container page-width">
+    <div class="saye-kundalini-grid__list">
+      {% for block in section.blocks %}
+        <div class="saye-kundalini-grid__item" {{ block.shopify_attributes }}>
+          <div class="saye-kundalini-grid__icon">{{ block.settings.icon }}</div>
+          <h3 class="saye-kundalini-grid__title">{{ block.settings.title | escape }}</h3>
+          <p class="saye-kundalini-grid__text">{{ block.settings.text | escape }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kundalini Grid",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "grid_item",
+      "name": "Grid Elemanı",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "İkon (Emoji)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Başlık"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Metin"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundalini Grid",
+      "blocks": [
+        {
+          "type": "grid_item",
+          "settings": {
+            "icon": "🫁",
+            "title": "Pranayama (Nefes)",
+            "text": "Derin nefes. Stres azalır, oksijen artar."
+          }
+        },
+        {
+          "type": "grid_item",
+          "settings": {
+            "icon": "📿",
+            "title": "Mantra",
+            "text": "Sesli tekrarlar. Kaygı azaltır, odak artar."
+          }
+        },
+        {
+          "type": "grid_item",
+          "settings": {
+            "icon": "🧘",
+            "title": "Kriya (Hareket)",
+            "text": "Enerji hareketini hisseder, beden-zihin bağlantısı."
+          }
+        },
+        {
+          "type": "grid_item",
+          "settings": {
+            "icon": "🌙",
+            "title": "Meditasyon",
+            "text": "Dersin sonunda 10–15 dk derin sessizlik."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

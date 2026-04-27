@@ -1,0 +1,97 @@
+.saye-kundalini-blog {
+  background-color: var(--saye-bg);
+  padding: 48px;
+}
+
+.saye-kundalini-blog__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.saye-kundalini-blog__heading {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  color: var(--saye-dark);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.saye-kundalini-blog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.saye-kundalini-blog__card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(60, 36, 21, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.saye-kundalini-blog__image-wrapper {
+  width: 100%;
+  height: 150px;
+  background-color: var(--saye-beige);
+}
+
+.saye-kundalini-blog__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.saye-kundalini-blog__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.saye-kundalini-blog__title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--saye-dark);
+  margin-bottom: 12px;
+}
+
+.saye-kundalini-blog__excerpt {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--saye-dark);
+  opacity: 0.8;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.saye-kundalini-blog__link {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--saye-cta);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.saye-kundalini-blog__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .saye-kundalini-blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .saye-kundalini-blog {
+    padding: 32px 24px;
+  }
+  
+  .saye-kundalini-blog__grid {
+    grid-template-columns: 1fr;
+  }
+}

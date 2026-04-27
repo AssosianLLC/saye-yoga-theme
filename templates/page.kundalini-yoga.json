@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "saye-kundalini-hero": {
+      "type": "saye-kundalini-hero",
+      "settings": {}
+    },
+    "saye-kundalini-what": {
+      "type": "saye-kundalini-what",
+      "settings": {}
+    },
+    "saye-kundalini-grid": {
+      "type": "saye-kundalini-grid",
+      "settings": {}
+    },
+    "saye-kundalini-schedule": {
+      "type": "saye-kundalini-schedule",
+      "settings": {}
+    },
+    "saye-kundalini-for-whom": {
+      "type": "saye-kundalini-for-whom",
+      "settings": {}
+    },
+    "saye-kundalini-cta": {
+      "type": "saye-kundalini-cta",
+      "settings": {}
+    },
+    "saye-kundalini-blog": {
+      "type": "saye-kundalini-blog",
+      "settings": {}
+    }
+  },
+  "order": [
+    "saye-kundalini-hero",
+    "saye-kundalini-what",
+    "saye-kundalini-grid",
+    "saye-kundalini-schedule",
+    "saye-kundalini-for-whom",
+    "saye-kundalini-cta",
+    "saye-kundalini-blog"
+  ]
+}

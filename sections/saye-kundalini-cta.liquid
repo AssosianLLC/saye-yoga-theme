@@ -1,0 +1,72 @@
+{{- 'saye-kundalini-cta.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-kundalini-cta" id="saye-kundalini-cta-{{ section.id }}">
+  <div class="saye-kundalini-cta__container page-width">
+    <h3 class="saye-kundalini-cta__heading">{{ section.settings.heading | escape }}</h3>
+    <div class="saye-kundalini-cta__price">{{ section.settings.price | escape }}</div>
+    <p class="saye-kundalini-cta__subtext">{{ section.settings.subtext | escape }}</p>
+    
+    <a href="{{ section.settings.button_link }}" class="saye-btn--primary saye-kundalini-cta__button">
+      {{ section.settings.button_text | escape }}
+    </a>
+    
+    <a href="{{ section.settings.secondary_link }}" class="saye-kundalini-cta__link">
+      {{ section.settings.secondary_text | escape }}
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kundalini CTA",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Başlık",
+      "default": "Kundalini Yoga'ya Başla"
+    },
+    {
+      "type": "text",
+      "id": "price",
+      "label": "Fiyat",
+      "default": "6.950 ₺/ay"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Alt Metin",
+      "default": "Vergiler dahil, aylık üyelik, taahhüt yok"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Buton Metni",
+      "default": "Üye Ol"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Buton Linki"
+    },
+    {
+      "type": "text",
+      "id": "secondary_text",
+      "label": "İkincil Link Metni",
+      "default": "Ücretsiz deneme dersi →"
+    },
+    {
+      "type": "url",
+      "id": "secondary_link",
+      "label": "İkincil Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundalini CTA"
+    }
+  ]
+}
+{% endschema %}

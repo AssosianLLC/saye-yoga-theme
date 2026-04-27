@@ -55,10 +55,16 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "saye_nav_UdBWyQ": {
+      "type": "saye-nav",
+      "name": "Navigasyon",
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "saye_nav_UdBWyQ"
   ]
 }

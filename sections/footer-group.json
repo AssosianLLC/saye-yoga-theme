@@ -11,6 +11,11 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "saye_footer_9rcgTb": {
+      "type": "saye-footer",
+      "name": "Footer",
+      "settings": {}
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -59,6 +64,7 @@
     }
   },
   "order": [
+    "saye_footer_9rcgTb",
     "footer"
   ]
 }

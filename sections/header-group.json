@@ -60,11 +60,17 @@
       "type": "saye-nav",
       "name": "Navigasyon",
       "settings": {}
+    },
+    "saye_announcement_QBJhFJ": {
+      "type": "saye-announcement",
+      "name": "Duyuru Bandı",
+      "settings": {}
     }
   },
   "order": [
     "announcement-bar",
     "header",
+    "saye_announcement_QBJhFJ",
     "saye_nav_UdBWyQ"
   ]
 }

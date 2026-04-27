@@ -1,13 +1,14 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "saye-announcement": {
-      "type": "saye-announcement",
-      "settings": {}
-    },
-    "saye-nav": {
-      "type": "saye-nav",
-      "settings": {}
-    },
     "saye-hero": {
       "type": "saye-hero",
       "settings": {}
@@ -43,15 +44,9 @@
     "saye-cta-band": {
       "type": "saye-cta-band",
       "settings": {}
-    },
-    "saye-footer": {
-      "type": "saye-footer",
-      "settings": {}
     }
   },
   "order": [
-    "saye-announcement",
-    "saye-nav",
     "saye-hero",
     "saye-trust",
     "saye-categories",
@@ -60,7 +55,6 @@
     "saye-packages",
     "saye-testimonials",
     "saye-faq-home",
-    "saye-cta-band",
-    "saye-footer"
+    "saye-cta-band"
   ]
 }

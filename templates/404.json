@@ -14,14 +14,26 @@
       "disabled": true,
       "settings": {}
     },
+    "saye_trial_trust_eeHgmH": {
+      "type": "saye-trial-trust",
+      "name": "Deneme Güven Bandı",
+      "settings": {}
+    },
     "saye_trial_form_8cm7d6": {
       "type": "saye-trial-form",
       "name": "Deneme Formu",
+      "settings": {}
+    },
+    "saye_trial_hero_rWjGiG": {
+      "type": "saye-trial-hero",
+      "name": "Deneme Hero",
       "settings": {}
     }
   },
   "order": [
     "main",
-    "saye_trial_form_8cm7d6"
+    "saye_trial_trust_eeHgmH",
+    "saye_trial_form_8cm7d6",
+    "saye_trial_hero_rWjGiG"
   ]
 }

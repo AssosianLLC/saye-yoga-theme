@@ -1,0 +1,28 @@
+.saye-authority {
+  background: var(--saye-bg);
+  padding: 48px 0;
+}
+
+.saye-authority__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.saye-authority__heading {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  margin: 0 0 16px 0;
+}
+
+.saye-authority__text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  opacity: 0.7;
+  margin: 0;
+  font-style: italic;
+}

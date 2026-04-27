@@ -1,0 +1,43 @@
+{{- 'saye-expertise.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-expertise" id="saye-expertise-{{ section.id }}">
+  <div class="saye-expertise__container page-width">
+    <h2 class="saye-expertise__heading">Uzmanlık & Sertifikalar</h2>
+
+    <ul class="saye-expertise__list">
+      <li class="saye-expertise__item">
+        <span class="saye-expertise__check" aria-hidden="true">✓</span>
+        <span>KRI (Kundalini Research Institute) sertifikası — Kundalini & Meditasyon</span>
+      </li>
+      <li class="saye-expertise__item">
+        <span class="saye-expertise__check" aria-hidden="true">✓</span>
+        <span>Yoga Alliance — Hatha Yoga Eğitmeni</span>
+      </li>
+      <li class="saye-expertise__item">
+        <span class="saye-expertise__check" aria-hidden="true">✓</span>
+        <span>Neslihan İskit — Hamile Yogası Uzmanlaşması</span>
+      </li>
+    </ul>
+
+    <div class="saye-expertise__badges">
+      <div class="saye-expertise__badge">
+        <span class="saye-expertise__badge-icon" aria-hidden="true">🧘</span>
+        <span class="saye-expertise__badge-text">KRI Sertifikalı</span>
+      </div>
+      <div class="saye-expertise__badge">
+        <span class="saye-expertise__badge-icon" aria-hidden="true">📜</span>
+        <span class="saye-expertise__badge-text">Hatha Yoga Eğitmeni</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Uzmanlık & Sertifikalar",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Uzmanlık & Sertifikalar" }]
+}
+{% endschema %}

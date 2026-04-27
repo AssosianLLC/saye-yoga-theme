@@ -1,0 +1,82 @@
+.saye-trust-section {
+  background: var(--saye-beige);
+  padding: 48px 0;
+}
+
+.saye-trust-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.saye-trust-section__heading {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  margin: 0 0 32px 0;
+}
+
+.saye-trust-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.saye-trust-section__col-title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  margin: 0 0 16px 0;
+}
+
+.saye-trust-section__contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.saye-trust-section__contact-item {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--saye-dark);
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.saye-trust-section__contact-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.saye-trust-section__contact-link {
+  color: var(--saye-cta);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.saye-trust-section__contact-link:hover {
+  color: var(--saye-dark);
+}
+
+.saye-trust-section__quote {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--saye-dark);
+  margin: 0;
+  padding-left: 24px;
+  border-left: 3px solid var(--saye-cta);
+}
+
+@media (max-width: 749px) {
+  .saye-trust-section__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

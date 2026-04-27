@@ -1,0 +1,38 @@
+{{- 'saye-trust-section.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-trust-section" id="saye-trust-section-{{ section.id }}">
+  <div class="saye-trust-section__container page-width">
+    <h2 class="saye-trust-section__heading">Bize Ulaş</h2>
+
+    <div class="saye-trust-section__grid">
+      <div class="saye-trust-section__col">
+        <h3 class="saye-trust-section__col-title">İletişim</h3>
+        <ul class="saye-trust-section__contact-list">
+          <li class="saye-trust-section__contact-item">
+            <span class="saye-trust-section__contact-icon" aria-hidden="true">✉</span>
+            <a class="saye-trust-section__contact-link" href="mailto:info@sayeyoga.com">info@sayeyoga.com</a>
+          </li>
+          <li class="saye-trust-section__contact-item">
+            <span class="saye-trust-section__contact-icon" aria-hidden="true">📷</span>
+            <a class="saye-trust-section__contact-link" href="/pages/instagram" aria-label="Saye Yoga Instagram">@sayeyoga</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="saye-trust-section__col">
+        <h3 class="saye-trust-section__col-title">Felsefe</h3>
+        <p class="saye-trust-section__quote">Yoga pratiği, bedeni iyileştirmenin ötesinde, zihin ve ruhun bir iç yolculuğudur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bize Ulaş",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Bize Ulaş" }]
+}
+{% endschema %}

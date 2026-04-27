@@ -1,0 +1,29 @@
+{{- 'saye-instructor-hero.css' | asset_url | stylesheet_tag -}}
+
+<section class="saye-instructor-hero" id="saye-instructor-hero-{{ section.id }}">
+  <div class="saye-instructor-hero__container page-width">
+    <div class="saye-instructor-hero__image-wrapper">
+      <img
+        class="saye-instructor-hero__image"
+        src="{{ 'gulsen-hero-full.jpg' | asset_url }}"
+        alt="Gülşen Bozdoğan yoga dersi verirken"
+        width="1200"
+        height="400"
+        loading="eager">
+      <div class="saye-instructor-hero__overlay"></div>
+      <div class="saye-instructor-hero__content">
+        <h1 class="saye-instructor-hero__heading">Saye Yoga'nın Arkasında Kim Var?</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Eğitmen Hero",
+  "tag": "section",
+  "class": "saye-section",
+  "settings": [],
+  "presets": [{ "name": "Eğitmen Hero" }]
+}
+{% endschema %}

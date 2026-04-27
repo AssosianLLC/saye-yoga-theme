@@ -1,0 +1,28 @@
+.saye-experience {
+  background: var(--saye-bg);
+  padding: 48px 0;
+}
+
+.saye-experience__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.saye-experience__heading {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--saye-dark);
+  margin: 0 0 24px 0;
+}
+
+.saye-experience__text {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--saye-dark);
+  margin: 0;
+  max-width: 780px;
+}

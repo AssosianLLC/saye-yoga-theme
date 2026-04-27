@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "saye-instructor-hero": {
+      "type": "saye-instructor-hero",
+      "settings": {}
+    },
+    "saye-experience": {
+      "type": "saye-experience",
+      "settings": {}
+    },
+    "saye-expertise": {
+      "type": "saye-expertise",
+      "settings": {}
+    },
+    "saye-authority": {
+      "type": "saye-authority",
+      "settings": {}
+    },
+    "saye-trust-section": {
+      "type": "saye-trust-section",
+      "settings": {}
+    },
+    "saye-instructor-schema": {
+      "type": "saye-instructor-schema",
+      "settings": {}
+    }
+  },
+  "order": [
+    "saye-instructor-hero",
+    "saye-experience",
+    "saye-expertise",
+    "saye-authority",
+    "saye-trust-section",
+    "saye-instructor-schema"
+  ]
+}

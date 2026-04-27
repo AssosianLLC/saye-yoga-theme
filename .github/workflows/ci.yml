@@ -3,11 +3,9 @@ name: CI
 on: [push]
 
 env:
-  # 2026 zaman uyuşmazlığı ve SSL hatalarını aşmak için
   NODE_TLS_REJECT_UNAUTHORIZED: "0"
-  # Node.js 24 kullanımını zorunlu kılar
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  # Shopify CLI'ın robotu (GitHub Actions) otomatik tanıması için
+  # Bazı Shopify CLI sürümleri için ek güvenlik:
   SHOPIFY_CLI_THEME_TOKEN: ${{ secrets.SHOP_PASSWORD }}
 
 permissions:
@@ -27,7 +25,8 @@ jobs:
         uses: Shopify/lighthouse-ci-action@v1.4.0
         with:
           store: ${{ secrets.SHOP_STORE }}
-          password: ${{ secrets.SHOP_PASSWORD }}
+          # DÜZELTME: 'password' ismini 'access_token' olarak değiştirdik
+          access_token: ${{ secrets.SHOP_PASSWORD }}
           lhci_github_app_token: ${{ secrets.LHCI_GITHUB_TOKEN }}
 
   theme-check:

@@ -1,0 +1,37 @@
+<section class="saye-hamile-safety" style="background-color: #ffffff; padding: 32px;">
+  <div class="saye-hamile-safety__container page-width" style="max-width: 800px; margin: 0 auto;">
+    
+    <h3 class="saye-hamile-safety__heading" style="font-family: var(--font-heading); font-size: 24px; color: var(--saye-dark); font-weight: 500; margin: 0 0 24px 0; text-align: center;">
+      {{ section.settings.heading | default: 'Güvenlik & Kurallar' }}
+    </h3>
+
+    <div class="saye-hamile-safety__box" style="background-color: #F5F7F5; border-left: 4px solid var(--saye-sage); padding: 32px; border-radius: 0 8px 8px 0;">
+      <ul class="saye-hamile-safety__list" style="list-style: none; padding: 0; margin: 0; font-family: var(--font-body); font-size: 16px; color: var(--saye-dark); line-height: 1.8;">
+        <li style="margin-bottom: 12px;">✓ Neslihan İskit sertifikalı eğitmenden güvenli uygulama</li>
+        <li style="margin-bottom: 12px;">✓ Her hafta farklı tema</li>
+        <li style="margin-bottom: 12px; font-weight: 500; color: var(--saye-error);">⚠ Doktor onayı mecburi (14. hafta sonrası)</li>
+        <li style="font-weight: 500; color: var(--saye-error);">⚠ Yüksek tansiyon, ödem gibi komplikasyonlarda danış</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Saye Hamile Safety",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Güvenlik & Kurallar"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saye Hamile Safety"
+    }
+  ]
+}
+{% endschema %}

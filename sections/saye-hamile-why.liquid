@@ -1,0 +1,38 @@
+<section class="saye-hamile-why" style="background-color: #ffffff; padding: 48px;">
+  <div class="saye-hamile-why__container page-width" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    
+    <h2 class="saye-hamile-why__heading" style="font-family: var(--font-heading); font-size: 36px; color: var(--saye-dark); font-weight: 500; margin: 0 0 24px 0;">
+      {{ section.settings.heading | default: 'Neden Hamile Yogası?' }}
+    </h2>
+
+    <p class="saye-hamile-why__text" style="font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--saye-dark); max-width: 800px; margin: 0 auto;">
+      {{ section.settings.text | default: 'Hamilelik, bedenin en büyük değişimi yaşadığı dönemdir. Yoga, kan dolaşımını destekler, hazırlık kaslarını güçlendirir, stresi azaltır ve doğuma ruh bakımından hazırlar. Dersler 14. haftadan sonraki hamileler için yapılandırılmıştır.' }}
+    </p>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Saye Hamile Why",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Neden Hamile Yogası?"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Hamilelik, bedenin en büyük değişimi yaşadığı dönemdir. Yoga, kan dolaşımını destekler, hazırlık kaslarını güçlendirir, stresi azaltır ve doğuma ruh bakımından hazırlar. Dersler 14. haftadan sonraki hamileler için yapılandırılmıştır."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saye Hamile Why"
+    }
+  ]
+}
+{% endschema %}

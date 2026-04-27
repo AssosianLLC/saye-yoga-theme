@@ -1,0 +1,52 @@
+<section class="saye-hamile-hero" style="background-color: var(--saye-sage); padding: 80px 48px; color: #ffffff;">
+  <div class="saye-hamile-hero__container page-width" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+    
+    <div class="saye-hamile-hero__warning" style="background-color: var(--saye-success); color: #ffffff; padding: 12px 24px; border-radius: 8px; display: inline-block; margin-bottom: 32px; font-family: var(--font-body); font-weight: 500;">
+      ⚠ 14. haftadan itibaren güvenli. Başlamadan önce doktorunuzdan onay alınız.
+    </div>
+
+    <h1 class="saye-hamile-hero__heading" style="font-family: var(--font-heading); font-size: 48px; font-weight: 500; margin: 0 0 24px 0;">
+      {{ section.settings.heading | default: 'Hamile Yogası' }}
+    </h1>
+
+    <p class="saye-hamile-hero__subtext" style="font-family: var(--font-body); font-size: 20px; line-height: 1.6; margin: 0 0 32px 0;">
+      {{ section.settings.subtext | default: '2. ve 3. trimester hamileler için güvenli, doğuma hazırlayan pratik.' }}
+    </p>
+
+    <div class="saye-hamile-hero__details" style="font-family: var(--font-body); font-size: 16px; opacity: 0.9;">
+      {{ section.settings.details | default: '75 dakika · Haftada 1 gün · Çarşamba 19:30 (İstanbul saati)' }}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Saye Hamile Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hamile Yogası"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "2. ve 3. trimester hamileler için güvenli, doğuma hazırlayan pratik."
+    },
+    {
+      "type": "text",
+      "id": "details",
+      "label": "Details",
+      "default": "75 dakika · Haftada 1 gün · Çarşamba 19:30 (İstanbul saati)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saye Hamile Hero"
+    }
+  ]
+}
+{% endschema %}

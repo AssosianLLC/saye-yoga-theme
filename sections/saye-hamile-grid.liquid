@@ -1,0 +1,57 @@
+<section class="saye-hamile-grid" style="background-color: var(--saye-beige); padding: 48px;">
+  <div class="saye-hamile-grid__container page-width" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div class="saye-hamile-grid__wrapper">
+      
+      <div class="saye-hamile-grid__item" style="background-color: #ffffff; padding: 32px; border-radius: 16px; box-shadow: 0 2px 12px rgba(60,36,21,0.08); text-align: center;">
+        <div class="saye-hamile-grid__icon" style="font-size: 48px; margin-bottom: 16px;">🫁</div>
+        <h3 class="saye-hamile-grid__title" style="font-family: var(--font-heading); font-size: 24px; color: var(--saye-dark); margin: 0 0 12px 0;">Solunum Teknikleri</h3>
+        <p class="saye-hamile-grid__text" style="font-family: var(--font-body); font-size: 16px; color: var(--saye-dark); line-height: 1.6; margin: 0;">Doğal nefes, endişe azaltma.</p>
+      </div>
+
+      <div class="saye-hamile-grid__item" style="background-color: #ffffff; padding: 32px; border-radius: 16px; box-shadow: 0 2px 12px rgba(60,36,21,0.08); text-align: center;">
+        <div class="saye-hamile-grid__icon" style="font-size: 48px; margin-bottom: 16px;">🧘</div>
+        <h3 class="saye-hamile-grid__title" style="font-family: var(--font-heading); font-size: 24px; color: var(--saye-dark); margin: 0 0 12px 0;">Güvenli Asanalar</h3>
+        <p class="saye-hamile-grid__text" style="font-family: var(--font-body); font-size: 16px; color: var(--saye-dark); line-height: 1.6; margin: 0;">Karın bölgesini güçlendiren hareketler.</p>
+      </div>
+
+      <div class="saye-hamile-grid__item" style="background-color: #ffffff; padding: 32px; border-radius: 16px; box-shadow: 0 2px 12px rgba(60,36,21,0.08); text-align: center;">
+        <div class="saye-hamile-grid__icon" style="font-size: 48px; margin-bottom: 16px;">🧘‍♀️</div>
+        <h3 class="saye-hamile-grid__title" style="font-family: var(--font-heading); font-size: 24px; color: var(--saye-dark); margin: 0 0 12px 0;">Meditasyon & Görselleştirme</h3>
+        <p class="saye-hamile-grid__text" style="font-family: var(--font-body); font-size: 16px; color: var(--saye-dark); line-height: 1.6; margin: 0;">Anne-bebek bağlantısı, iç huzur.</p>
+      </div>
+
+      <div class="saye-hamile-grid__item" style="background-color: #ffffff; padding: 32px; border-radius: 16px; box-shadow: 0 2px 12px rgba(60,36,21,0.08); text-align: center;">
+        <div class="saye-hamile-grid__icon" style="font-size: 48px; margin-bottom: 16px;">❤️</div>
+        <h3 class="saye-hamile-grid__title" style="font-family: var(--font-heading); font-size: 24px; color: var(--saye-dark); margin: 0 0 12px 0;">Doğum Hazırlığı</h3>
+        <p class="saye-hamile-grid__text" style="font-family: var(--font-body); font-size: 16px; color: var(--saye-dark); line-height: 1.6; margin: 0;">Pelvis zemini egzersizleri, relaksasyon.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .saye-hamile-grid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    .saye-hamile-grid__wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Saye Hamile Grid",
+  "presets": [
+    {
+      "name": "Saye Hamile Grid"
+    }
+  ]
+}
+{% endschema %}

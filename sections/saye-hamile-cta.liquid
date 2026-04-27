@@ -1,0 +1,73 @@
+<section class="saye-hamile-cta" style="background-color: #ffffff; padding: 48px;">
+  <div class="saye-hamile-cta__container page-width" style="max-width: 600px; margin: 0 auto; text-align: center; border: 1px solid var(--saye-beige); border-radius: 16px; padding: 48px; box-shadow: 0 2px 12px rgba(60,36,21,0.08);">
+    
+    <h3 class="saye-hamile-cta__heading" style="font-family: var(--font-heading); font-size: 24px; color: var(--saye-dark); font-weight: 500; margin: 0 0 16px 0;">
+      {{ section.settings.heading | default: "Hamile Yogası'na Başla" }}
+    </h3>
+
+    <h2 class="saye-hamile-cta__price" style="font-family: var(--font-heading); font-size: 36px; color: var(--saye-sage); font-weight: 500; margin: 0 0 8px 0;">
+      {{ section.settings.price | default: '3.950 ₺/ay' }}
+    </h2>
+
+    <p class="saye-hamile-cta__subtext" style="font-family: var(--font-body); font-size: 14px; color: var(--saye-dark); opacity: 0.8; margin: 0 0 32px 0;">
+      {{ section.settings.subtext | default: 'Fiyatlara vergiler dahildir, taahhüt yok' }}
+    </p>
+
+    <a href="{{ section.settings.btn_url | default: '/products/hamile-yogasi' }}" class="saye-hamile-cta__btn" style="display: block; width: 100%; background-color: var(--saye-sage); color: #ffffff; text-decoration: none; font-family: var(--font-body); font-size: 16px; font-weight: 500; padding: 16px 28px; border-radius: 8px; margin-bottom: 24px; transition: opacity 0.2s ease;">
+      {{ section.settings.btn_text | default: 'Üye Ol' }}
+    </a>
+
+    <a href="/products/deneme-dersi" class="saye-hamile-cta__trial-link" style="font-family: var(--font-body); font-size: 16px; color: var(--saye-sage); text-decoration: underline;">
+      Ücretsiz deneme dersi →
+    </a>
+
+  </div>
+</section>
+
+<style>
+  .saye-hamile-cta__btn:hover {
+    opacity: 0.9;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Saye Hamile CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hamile Yogası'na Başla"
+    },
+    {
+      "type": "text",
+      "id": "price",
+      "label": "Price",
+      "default": "3.950 ₺/ay"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Fiyatlara vergiler dahildir, taahhüt yok"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Üye Ol"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saye Hamile CTA"
+    }
+  ]
+}
+{% endschema %}

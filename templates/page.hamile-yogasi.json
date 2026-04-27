@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "hero": {
+      "type": "saye-hamile-hero",
+      "settings": {}
+    },
+    "why": {
+      "type": "saye-hamile-why",
+      "settings": {}
+    },
+    "grid": {
+      "type": "saye-hamile-grid",
+      "settings": {}
+    },
+    "safety": {
+      "type": "saye-hamile-safety",
+      "settings": {}
+    },
+    "schedule": {
+      "type": "saye-hamile-schedule",
+      "settings": {}
+    },
+    "for-whom": {
+      "type": "saye-hamile-for-whom",
+      "settings": {}
+    },
+    "cta": {
+      "type": "saye-hamile-cta",
+      "settings": {}
+    },
+    "blog": {
+      "type": "saye-hamile-blog",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "why",
+    "grid",
+    "safety",
+    "schedule",
+    "for-whom",
+    "cta",
+    "blog"
+  ]
+}
